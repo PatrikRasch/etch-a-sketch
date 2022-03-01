@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+}
+
+#containerDiv {
+    display: grid;
+    justify-content: center;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    width: 540px;
+    height: 540px;
+    margin: 30px;
+}
+
+.gridItem {
+    border: 0.75px solid black;
+}
+
+#resetdiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#resetbtn, #resetgridbtn {
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+    margin: 0px 30px 0px 30px;
+    transition: 0.2s;
+    background-color: pink;
+    opacity: 75%;
+}
+
+#resetbtn:hover, #resetgridbtn:hover {
+    background-color: pink;
+    opacity: 100%;
+    transition: 0.2s;
+    box-shadow: 0px 0px 20px 5px rgb(233, 233, 233);
+}
+
+#resetbtn:active, #resetgridbtn:active {
+    transform: scale(1.01);
+    transition: 0.05s;
+}
+
+/* Slider div */
+#slider {
+    display: grid;
+    justify-content: center;
+}
+/* Slider itself */
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 250px;
+    height: 15px;
+    border-radius: 25px;
+    background: rgb(235, 235, 235);
+    margin-top: 25px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+/* Slider thumb */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    background: rgb(51, 147, 51);
+}
+/* Slider on hover */
+.slider:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
